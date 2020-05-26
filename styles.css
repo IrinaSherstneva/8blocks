@@ -1,0 +1,78 @@
+
+h1 {
+    color: #fff;
+    margin: 10px;
+}
+
+.flex-container {
+    display: flex;
+    height: 500px;
+}
+
+.pinkBox {
+    background-color: #bc658d;
+    box-sizing: border-box;
+    border: solid 10px white;
+    padding: 10px;
+}
+
+.A {
+    flex-grow: 2;
+}
+
+.B {
+    flex-grow: 3;
+}
+.C {
+    flex-grow: 1;
+}
+
+.D {
+    flex-grow: 1;
+}
+
+.E {
+    flex-grow: 2;
+}
+
+.F {
+    display: flex;
+    align-items: stretch;
+    flex-grow: 2;
+}
+.G {
+    flex-grow: 10;
+}
+
+.H {
+    flex-grow: 1;
+}
+.ABCDE {
+    display: flex;
+    flex-grow: 6;
+    flex-direction: column;
+}
+
+.AB {
+    display: flex;
+    flex-grow: 8;
+}
+
+.CDE {
+    display: flex;
+    flex-grow: 9;
+    /* align-items: stretch; */
+}
+
+.CD {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    flex-grow: 3;
+}
+
+.GH {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
