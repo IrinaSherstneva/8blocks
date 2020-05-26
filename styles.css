@@ -1,78 +1,83 @@
-
-h1 {
+h3 {
     color: #fff;
-    margin: 10px;
-}
-
-.flex-container {
+    margin: 6px;
+  }
+  
+  .flex-container {
     display: flex;
-    height: 500px;
-}
-
-.pinkBox {
+    height: 470px;
+    flex-direction: row;
+    padding: 5px;
+  }
+  
+  .pinkBox {
     background-color: #bc658d;
     box-sizing: border-box;
     border: solid 10px white;
     padding: 10px;
-}
-
-.A {
-    flex-grow: 2;
-}
-
-.B {
-    flex-grow: 3;
-}
-.C {
+  }
+  
+  .A,
+  .C,
+  .D,
+  .E,
+  .H {
     flex-grow: 1;
-}
-
-.D {
-    flex-grow: 1;
-}
-
-.E {
+  }
+  
+  .B {
     flex-grow: 2;
-}
-
-.F {
+  }
+  
+  .F {
     display: flex;
     align-items: stretch;
-    flex-grow: 2;
-}
-.G {
-    flex-grow: 10;
-}
-
-.H {
     flex-grow: 1;
-}
-.ABCDE {
-    display: flex;
-    flex-grow: 6;
-    flex-direction: column;
-}
-
-.AB {
-    display: flex;
+  }
+  .G {
     flex-grow: 8;
-}
-
-.CDE {
+  }
+  .ABCDE {
+    display: flex;
+    flex-grow: 2.5;
+    flex-direction: column;
+  }
+  
+  .AB {
     display: flex;
     flex-grow: 9;
+  }
+  
+  .CDE {
+    display: flex;
+    flex-grow: 10;
     /* align-items: stretch; */
-}
-
-.CD {
+  }
+  
+  .CD {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    flex-grow: 3;
-}
-
-.GH {
     flex-grow: 2;
+  }
+  
+  .GH {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-}
+  }
+  
+  @media screen and (max-width: 320px) {
+    .flex-container {
+      flex-direction: column;
+      height: 700px;
+    }
+    .ABCDE {
+      flex-grow: 6;
+    }
+    .F,
+    .GH {
+      flex-grow: 1;
+    }
+  }
+  
