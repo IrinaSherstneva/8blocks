@@ -1,0 +1,96 @@
+h3 {
+    color: #fff;
+    margin: 6px;
+  }
+  html, body{
+      height: 100%;
+      width: 100%;
+  }
+  .flex-container {
+    display: flex;
+    height: 100%;
+    padding: 5px;
+  }
+  
+  .pinkBox {
+    background-color: #bc658d;
+    box-sizing: border-box;
+    border: solid 10px white;
+    padding: 10px;
+  }
+
+.ABCDE{
+    width: 60%;
+    order: 0;
+    display: flex;
+    flex-direction: column;
+}
+.F{
+    width: 20%;
+    order: 1;
+}
+.GH{
+    width: 20%;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+}
+.G{
+    height: 90%;
+    order: 0;
+}
+.H{
+    height: 10%;
+    order: 1;
+}
+.AB{
+    height: 40%;
+    order: 0;
+    display: flex;
+}
+.CDE{
+    height: 60%;
+    order: 1;
+    display: flex;
+}
+.A{
+    width: 40%;
+    order: 0;
+}
+.B{
+    width: 60%;
+    order: 1;
+}
+.CD{
+    width: 70%;
+    order: 0;
+    display: flex;
+    flex-direction: column;
+}
+.E{
+    width: 30%;
+    order: 1;
+}
+.C{
+    height: 50%;
+    order: 0;
+}
+.D{
+    height: 50%;
+    order: 1;
+}
+@media screen and (max-width: 620px) {
+    .flex-container{
+        flex-direction: column;
+    }
+    .ABCDE{
+        width: 100%;
+        flex: 1;
+    }
+    .F{
+        width: 100%;
+    }
+    .GH{
+        width: 100%;
+    }
+}
